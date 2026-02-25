@@ -1,0 +1,74 @@
+{
+  "entities": [
+    {
+      "type": "CODICEFISCALE",
+      "value": "RSSMRA80A01H501U",
+      "span": {
+        "start": 74,
+        "end": 90
+      },
+      "confidence": 0.95,
+      "source": "regex",
+      "version": "regex-v1.0"
+    },
+    {
+      "type": "IMPORTO",
+      "value": "450.00",
+      "span": {
+        "start": 211,
+        "end": 219
+      },
+      "confidence": 0.95,
+      "source": "regex",
+      "version": "regex-v1.0"
+    },
+    {
+      "type": "EMAIL",
+      "value": "mario.rossi@example.it",
+      "span": {
+        "start": 516,
+        "end": 538
+      },
+      "confidence": 0.95,
+      "source": "regex",
+      "version": "regex-v1.0"
+    },
+    {
+      "type": "TELEFONO",
+      "value": "+39 02 98765432",
+      "span": {
+        "start": 545,
+        "end": 560
+      },
+      "confidence": 0.95,
+      "source": "regex",
+      "version": "regex-v1.0"
+    }
+  ],
+  "meta": {
+    "id_conversazione": "<abcd1234-5678-90ef-ghij-klmnopqrstuv@example.it>",
+    "id_messaggio": "<abcd1234-5678-90ef-ghij-klmnopqrstuv@example.it>",
+    "status": "ok",
+    "layer_version": "1.0.0",
+    "processing_time_ms": 3340.523,
+    "component_timings_ms": {
+      "step1_validation": 0.108,
+      "step2_normalisation": 0.091,
+      "step3_regex": 1.656,
+      "step4_ner": 3337.508,
+      "step5_lexicon": 0.017,
+      "step6_merge": 0.049,
+      "step7_filters": 0.03
+    },
+    "feature_flags": {
+      "engine_regex": true,
+      "engine_ner": true,
+      "engine_lexicon": true
+    },
+    "fallbacks": [
+      "NER skipped: spaCy model 'it_core_news_lg-3.7.1' not installed"
+    ],
+    "entity_count": 4
+  },
+  "errors": []
+}
