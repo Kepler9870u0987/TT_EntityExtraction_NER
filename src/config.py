@@ -88,7 +88,7 @@ class PipelineConfig:
     lexicon_version: str = "lexicon-v1.0"
 
     # --- NER model identifier (used as entity version tag) ---
-    ner_model_name: str = "it_core_news_lg-3.7.1"
+    ner_model_name: str = "it_core_news_lg"
 
     # ------------------------------------------------------------------
     # Factory helpers

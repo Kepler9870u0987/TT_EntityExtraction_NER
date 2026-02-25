@@ -1,6 +1,28 @@
 {
   "entities": [
     {
+      "type": "MISC",
+      "value": "Volevo",
+      "span": {
+        "start": 14,
+        "end": 20
+      },
+      "confidence": 0.75,
+      "source": "ner",
+      "version": "it_core_news_lg"
+    },
+    {
+      "type": "MISC",
+      "value": "Codice Fiscale",
+      "span": {
+        "start": 58,
+        "end": 72
+      },
+      "confidence": 0.75,
+      "source": "ner",
+      "version": "it_core_news_lg"
+    },
+    {
       "type": "CODICEFISCALE",
       "value": "RSSMRA80A01H501U",
       "span": {
@@ -23,6 +45,28 @@
       "version": "regex-v1.0"
     },
     {
+      "type": "MISC",
+      "value": "PDF",
+      "span": {
+        "start": 272,
+        "end": 275
+      },
+      "confidence": 0.75,
+      "source": "ner",
+      "version": "it_core_news_lg"
+    },
+    {
+      "type": "PER",
+      "value": "Contatto",
+      "span": {
+        "start": 506,
+        "end": 514
+      },
+      "confidence": 0.75,
+      "source": "ner",
+      "version": "it_core_news_lg"
+    },
+    {
       "type": "EMAIL",
       "value": "mario.rossi@example.it",
       "span": {
@@ -43,6 +87,17 @@
       "confidence": 0.95,
       "source": "regex",
       "version": "regex-v1.0"
+    },
+    {
+      "type": "PER",
+      "value": "Mario Rossi",
+      "span": {
+        "start": 579,
+        "end": 590
+      },
+      "confidence": 0.75,
+      "source": "ner",
+      "version": "it_core_news_lg"
     }
   ],
   "meta": {
@@ -50,25 +105,23 @@
     "id_messaggio": "<abcd1234-5678-90ef-ghij-klmnopqrstuv@example.it>",
     "status": "ok",
     "layer_version": "1.0.0",
-    "processing_time_ms": 3340.523,
+    "processing_time_ms": 5213.505,
     "component_timings_ms": {
-      "step1_validation": 0.108,
-      "step2_normalisation": 0.091,
-      "step3_regex": 1.656,
-      "step4_ner": 3337.508,
-      "step5_lexicon": 0.017,
-      "step6_merge": 0.049,
-      "step7_filters": 0.03
+      "step1_validation": 0.166,
+      "step2_normalisation": 0.132,
+      "step3_regex": 2.155,
+      "step4_ner": 5210.473,
+      "step5_lexicon": 0.014,
+      "step6_merge": 0.035,
+      "step7_filters": 0.021
     },
     "feature_flags": {
       "engine_regex": true,
       "engine_ner": true,
       "engine_lexicon": true
     },
-    "fallbacks": [
-      "NER skipped: spaCy model 'it_core_news_lg-3.7.1' not installed"
-    ],
-    "entity_count": 4
+    "fallbacks": [],
+    "entity_count": 9
   },
   "errors": []
 }
