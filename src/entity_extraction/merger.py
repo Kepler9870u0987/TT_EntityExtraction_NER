@@ -62,11 +62,13 @@ def merge_entities_deterministic(
     if not entities:
         return []
 
-    # ★FIX #8b★ — Deduplicate exact matches (same label + text + start + end)
+    # ★FIX #8b★ — Deduplicate truly identical entities
+    # Key includes source + confidence so entities with same span but different
+    # source/confidence are NOT discarded here but handled by priority resolution.
     seen: set = set()
     deduped: List[Entity] = []
     for e in entities:
-        key = (e.label, e.text, e.start, e.end)
+        key = (e.label, e.text, e.start, e.end, e.source, e.confidence)
         if key not in seen:
             seen.add(key)
             deduped.append(e)
