@@ -1,0 +1,12 @@
+# Development & observability dependencies
+-r requirements.txt
+
+# Observability
+prometheus-client>=0.19
+structlog>=24.0
+
+# Dev / testing
+pytest>=7.4
+pytest-cov>=4.1
+mypy>=1.8
+ruff>=0.2
